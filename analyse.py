@@ -1,4 +1,6 @@
 from random_username.generate import generate_username
+from nltk.tokenize import sent_tokenize
+from nltk.tokenize import sent_tokenize, word_tokenize
 
 
 # Welcome User
@@ -47,13 +49,29 @@ def getArticleText():
     f = open("files/article.txt", "r")
     rawText = f.read()
     f.close()
-    return rawText.replace("\n", "").replace("\r", "")
+    return rawText.replace("\n", " ").replace("\r", "")
 
+#Extract Sentences
+def tokenizeSentences(rawText):
+    return sent_tokenize(rawText)
+
+#Extract Words from list of sentences 
+def tokenizeWords(sentences):
+    words = []
+    for sentence in sentences:
+        words.extend(word_tokenize(sentence))
+    return words
+
+# Get User Details
 welcomeUser()
 username = getUsername()
 greetUser(username)
 
-
+#Extract and tokenize text
 articleTextRaw = getArticleText()
+articleSentences = tokenizeSentences(articleTextRaw)
+articleWords = tokenizeWords(articleSentences)
+
+#Print for testing 
 print("GOT:")
-print(getArticleText())
+print(articleWords)
