@@ -1,6 +1,7 @@
 from random_username.generate import generate_username
-from nltk.tokenize import sent_tokenize
+# from nltk.tokenize import sent_tokenize
 from nltk.tokenize import sent_tokenize, word_tokenize
+import re
 
 
 # Welcome User
@@ -44,6 +45,7 @@ def getUsername():
 # Greet the user
 def greetUser(name):
     print("Hello, " + name)
+
 # Get text from file 
 def getArticleText():
     f = open("files/article.txt", "r")
@@ -51,7 +53,7 @@ def getArticleText():
     f.close()
     return rawText.replace("\n", " ").replace("\r", "")
 
-#Extract Sentences
+#Extract Sentences from raw Text Body
 def tokenizeSentences(rawText):
     return sent_tokenize(rawText)
 
@@ -62,16 +64,34 @@ def tokenizeWords(sentences):
         words.extend(word_tokenize(sentence))
     return words
 
+# Get the key sentences based on search pattern of key words
+def extractKeySentences(sentences, searchPattern):
+    matchedSentences = []
+    for sentence in sentences:
+        # If sentence matches desired pattern, add to matchedSentences
+        if re.search(searchPattern, sentence.lower()):
+            matchedSentences.append(sentence)
+    return matchedSentences
+
 # Get User Details
-welcomeUser()
-username = getUsername()
-greetUser(username)
+# welcomeUser()
+# username = getUsername()
+# greetUser(username)
 
 #Extract and tokenize text
 articleTextRaw = getArticleText()
+articleTextRaw = articleTextRaw.encode("ascii", "ignore").decode()
+
 articleSentences = tokenizeSentences(articleTextRaw)
 articleWords = tokenizeWords(articleSentences)
+# CLEAN THE TEXT HERE (outside the function)
+
+
+# Get Analytics
+stockSearchPattern = "[0-9]|[%$€£]|thousand|million|billion|trillion|profit|loss"
+keySentences = extractKeySentences(articleSentences, stockSearchPattern)
+
 
 #Print for testing 
 print("GOT:")
-print(articleWords)
+print(keySentences)
