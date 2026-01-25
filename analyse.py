@@ -1,13 +1,17 @@
 from random_username.generate import generate_username
-# from nltk.tokenize import sent_tokenize
+import re
 from nltk.tokenize import sent_tokenize, word_tokenize
 import nltk
 from nltk.stem import WordNetLemmatizer
-from nltk.corpus import wordnet
+from nltk.corpus import wordnet, stopwords
+nltk.download('stopwords')
 nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
+nltk.download('averaged_perceptron_tagger_eng')
+
 wordLemmatizer = WordNetLemmatizer()
-import re
+stopWords = set(stopwords.words('english'))
+
 
 # Welcome User
 def welcomeUser():
@@ -45,7 +49,7 @@ def getUsername():
     return generate_username()[0]
 
     
-			
+            
 
 # Greet the user
 def greetUser(name):
@@ -80,24 +84,24 @@ def extractKeySentences(sentences, searchPattern):
 
 # Get the average words per sentence, excluding punctuation
 def getWordsPerSentence(sentences):
-	totalWords = 0
-	for sentence in sentences:
-		totalWords += len(sentence.split(" "))
-	return totalWords / len(sentences)
+    totalWords = 0
+    for sentence in sentences:
+        totalWords += len(sentence.split(" "))
+    return totalWords / len(sentences)
 
 # Convert part of speech from pos_tag() function
 # into wordnet compatible pos tag
 posToWordnetTag = {
-	"J": wordnet.ADJ,
-	"V": wordnet.VERB,
-	"N": wordnet.NOUN,
-	"R": wordnet.ADV
+    "J": wordnet.ADJ,
+    "V": wordnet.VERB,
+    "N": wordnet.NOUN,
+    "R": wordnet.ADV
 }
 def treebankPosToWordnetPos(partOfSpeech):
-	posFirstChar = partOfSpeech[0]
-	if posFirstChar in posToWordnetTag:
-		return posToWordnetTag[posFirstChar]
-	return wordnet.NOUN
+    posFirstChar = partOfSpeech[0]
+    if posFirstChar in posToWordnetTag:
+        return posToWordnetTag[posFirstChar]
+    return wordnet.NOUN
 
 # Convert raw list of (word, POS) tuple to a list of strings
 # that only include valid english words
@@ -105,10 +109,10 @@ def cleanseWordList(posTaggedWordTuples):
     cleansedWords = []
     invalidWordPattern = "[^a-zA-Z-+]"
     for posTaggedWordTuple in posTaggedWordTuples:
-		word = posTaggedWordTuple[0]
+        word = posTaggedWordTuple[0]
         pos = posTaggedWordTuple[1]
         cleansedWord = word.replace(".", "").lower()
-        if (not re.search(invalidWordPattern, cleansedWord)) and len(cleansedWord) > 1:
+        if (not re.search(invalidWordPattern, cleansedWord)) and len(cleansedWord) > 1 and cleansedWord not in stopWords:
             cleansedWords.append(wordLemmatizer.lemmatize(cleansedWord, treebankPosToWordnetPos(pos)))
     return cleansedWords
     
