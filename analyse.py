@@ -1,8 +1,11 @@
 from random_username.generate import generate_username
 # from nltk.tokenize import sent_tokenize
 from nltk.tokenize import sent_tokenize, word_tokenize
+import nltk
+from nltk.stem import WordNetLemmatizer
+nltk.download('wordnet')
+wordLemmatizer = WordNetLemmatizer()
 import re
-
 
 # Welcome User
 def welcomeUser():
@@ -87,13 +90,13 @@ def cleanseWordList(words):
     for word in words:
         cleansedWord = word.replace(".", "").lower()
         if (not re.search(invalidWordPattern, cleansedWord)) and len(cleansedWord) > 1:
-            cleansedWords.append(cleansedWord)
+            cleansedWords.append(wordLemmatizer.lemmatize(cleansedWord))
     return cleansedWords
     
 # Get User Details
-welcomeUser()
-username = getUsername()
-greetUser(username)
+# welcomeUser()
+# username = getUsername()
+# greetUser(username)
 
 #Extract and tokenize text
 articleTextRaw = getArticleText()
