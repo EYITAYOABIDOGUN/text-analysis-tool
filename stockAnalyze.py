@@ -1,18 +1,83 @@
 import yfinance as yf
+from datetime import datetime
+
 
 def extractBasicInfo(data):
-	keysToExtract = [ 'longName', 'website', 'sector', 'fullTimeEmployees', 'marketCap', 'totalRevenue', 'trailingEps' ]
-	basicInfo = {}
-	for key in keysToExtract:
-		if key in data:
-			basicInfo[key] = data[key]
-		else:
-			basicInfo[key] = ""
-	return basicInfo
+    keysToExtract = [
+        'longName',
+        'website',
+        'sector',
+        'fullTimeEmployees',
+        'marketCap',
+        'totalRevenue',
+        'trailingEps'
+    ]
+    basicInfo = {}
+
+    for key in keysToExtract:
+        basicInfo[key] = data.get(key, '')
+
+    return basicInfo
+
+
+def getPriceHistory(company):
+    historyDf = company.history(period='12mo')
+
+    prices = historyDf['Open'].tolist()
+    dates = historyDf.index.strftime('%Y-%m-%d').tolist()
+
+    return {
+        'price': prices,
+        'date': dates
+    }
+
+
+def getEarningsDates(company):
+    earningsDatesDf = company.earnings_dates
+
+    allDates = earningsDatesDf.index.strftime('%Y-%m-%d').tolist()
+    dateObjects = [datetime.strptime(date, '%Y-%m-%d') for date in allDates]
+
+    currentDate = datetime.now()
+    futureDates = [
+        date.strftime('%Y-%m-%d')
+        for date in dateObjects
+        if date > currentDate
+    ]
+
+    return futureDates
+
+
+def getCompanyNews(company):
+    newsList = company.news
+    allNewsArticles = []
+
+    for newsDict in newsList:
+        allNewsArticles.append({
+            'title': newsDict.get('title', ''),
+            'link': newsDict.get('link', '')
+        })
+
+    return allNewsArticles
+
 
 def getCompanyStockInfo(tickerSymbol):
-	company = yf.Ticker(tickerSymbol)
-	basicInfo = extractBasicInfo(company.info)
-	print(basicInfo)
+    # Get data from Yahoo Finance
+    company = yf.Ticker(tickerSymbol)
 
-getCompanyStockInfo("MSFT")
+    basicInfo = extractBasicInfo(company.info)
+    priceHistory = getPriceHistory(company)
+    futureEarningsDates = getEarningsDates(company)
+    newsArticles = getCompanyNews(company)
+
+    return {
+        'basicInfo': basicInfo,
+        'priceHistory': priceHistory,
+        'futureEarningsDates': futureEarningsDates,
+        'news': newsArticles
+    }
+
+
+# Example usage
+data = getCompanyStockInfo('MSFT')
+print(data)
