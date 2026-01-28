@@ -5,6 +5,7 @@ from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet, stopwords
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from wordcloud import WordCloud
+
 nltk.download('stopwords')
 nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
@@ -15,19 +16,18 @@ wordLemmatizer = WordNetLemmatizer()
 stopWords = set(stopwords.words('english'))
 sentimentAnalyzer = SentimentIntensityAnalyzer()
 
+
 # Welcome User
 def welcomeUser():
     print("\nWelcome to the text analysis tool, I will mine and analyze a body of text from a file you give me!")
 
+
 # Get Username
 def getUsername():
-
     maxAttempts = 3
     attempts = 0
 
     while attempts < maxAttempts:
-
-        # Print message prompting user to input their name
         if attempts == 0:
             inputPrompt = "\nTo begin, please enter your username:\n"
         else:
@@ -35,7 +35,6 @@ def getUsername():
 
         usernameFromInput = input(inputPrompt)
 
-        # Validate username
         if len(usernameFromInput) < 5 or not usernameFromInput.isidentifier():
             print(
                 "Your username must be at least 5 characters long, "
@@ -50,107 +49,108 @@ def getUsername():
     print(f"\nExhausted all {maxAttempts} attempts, assigning username instead...")
     return generate_username()[0]
 
-    
-            
 
 # Greet the user
 def greetUser(name):
     print("Hello, " + name)
 
-# Get text from file 
+
+# Get text from file
 def getArticleText():
     f = open("files/article.txt", "r")
     rawText = f.read()
     f.close()
     return rawText.replace("\n", " ").replace("\r", "")
 
-#Extract Sentences from raw Text Body
+
+# Extract Sentences
 def tokenizeSentences(rawText):
     return sent_tokenize(rawText)
 
-#Extract Words from list of sentences 
+
+# Extract Words
 def tokenizeWords(sentences):
     words = []
     for sentence in sentences:
         words.extend(word_tokenize(sentence))
     return words
 
-# Get the key sentences based on search pattern of key words
+
+# Extract Key Sentences
 def extractKeySentences(sentences, searchPattern):
     matchedSentences = []
     for sentence in sentences:
-        # If sentence matches desired pattern, add to matchedSentences
         if re.search(searchPattern, sentence.lower()):
             matchedSentences.append(sentence)
     return matchedSentences
 
-# Get the average words per sentence, excluding punctuation
+
+# Average words per sentence
 def getWordsPerSentence(sentences):
     totalWords = 0
     for sentence in sentences:
         totalWords += len(sentence.split(" "))
     return totalWords / len(sentences)
 
-# Convert part of speech from pos_tag() function
-# into wordnet compatible pos tag
+
+# POS mapping
 posToWordnetTag = {
     "J": wordnet.ADJ,
     "V": wordnet.VERB,
     "N": wordnet.NOUN,
     "R": wordnet.ADV
 }
+
+
 def treebankPosToWordnetPos(partOfSpeech):
     posFirstChar = partOfSpeech[0]
     if posFirstChar in posToWordnetTag:
         return posToWordnetTag[posFirstChar]
     return wordnet.NOUN
 
-# Convert raw list of (word, POS) tuple to a list of strings
-# that only include valid english words
+
+# Cleanse words
 def cleanseWordList(posTaggedWordTuples):
     cleansedWords = []
     invalidWordPattern = "[^a-zA-Z-+]"
-    for posTaggedWordTuple in posTaggedWordTuples:
-        word = posTaggedWordTuple[0]
-        pos = posTaggedWordTuple[1]
+    for word, pos in posTaggedWordTuples:
         cleansedWord = word.replace(".", "").lower()
-        if (not re.search(invalidWordPattern, cleansedWord)) and len(cleansedWord) > 1 and cleansedWord not in stopWords:
-            cleansedWords.append(wordLemmatizer.lemmatize(cleansedWord, treebankPosToWordnetPos(pos)))
+        if (
+            not re.search(invalidWordPattern, cleansedWord)
+            and len(cleansedWord) > 1
+            and cleansedWord not in stopWords
+        ):
+            cleansedWords.append(
+                wordLemmatizer.lemmatize(cleansedWord, treebankPosToWordnetPos(pos))
+            )
     return cleansedWords
-    
-# Get User Details
-welcomeUser()
-username = getUsername()
-greetUser(username)
 
-#Extract and tokenize text
-articleTextRaw = getArticleText()
-articleTextRaw = articleTextRaw.encode("ascii", "ignore").decode()
-def analyseText(textToAnalyze):
+
+# MAIN ANALYSIS FUNCTION (this is what stockAnalyze.py uses)
+def analyzeText(textToAnalyze):
     articleSentences = tokenizeSentences(textToAnalyze)
     articleWords = tokenizeWords(articleSentences)
 
-    # Get Sentence Analytics
     stockSearchPattern = "[0-9]|[%$€£]|thousand|million|billion|trillion|profit|loss"
     keySentences = extractKeySentences(articleSentences, stockSearchPattern)
     wordsPerSentence = getWordsPerSentence(articleSentences)
 
-    # Get word Analytics
     wordsPosTagged = nltk.pos_tag(articleWords)
     articleWordsCleansed = cleanseWordList(wordsPosTagged)
 
     separator = " "
     wordCloudFilePath = "results/wordcloud.png"
-    wordcloud = WordCloud(width = 1000, height = 700, \
-        background_color="white", colormap="Set3", collocations=False).generate(separator.join(articleWordsCleansed))
-    # wordcloud.to_file(wordCloudFilePath)
+    WordCloud(
+        width=1000,
+        height=700,
+        background_color="white",
+        colormap="Set3",
+        collocations=False
+    ).generate(separator.join(articleWordsCleansed))
 
-    # Run Sentiment Analysis
     sentimentResult = sentimentAnalyzer.polarity_scores(textToAnalyze)
 
-    # Collate analyses into one dictionary
     finalResult = {
-        "username": username,
         "data": {
             "keySentences": keySentences,
             "wordsPerSentence": round(wordsPerSentence, 1),
@@ -162,19 +162,15 @@ def analyseText(textToAnalyze):
             "wordsAnalyzed": len(articleWordsCleansed)
         }
     }
-        return finalResult
+
+    return finalResult
+
 
 def runAsFile():
-	# Get User Details
-	welcomeUser()
-	username = getUsername()
-	greetUser(username)
+    welcomeUser()
+    username = getUsername()
+    greetUser(username)
 
-
- #Print for testing 
-print("GOT:")
-print(articleWordsCleansed)
-print(finalResultJson)
-    # Extract and Tokenize Text
-	articleTextRaw = getArticleText()
-	analyzeText(articleTextRaw)
+    articleTextRaw = getArticleText()
+    articleTextRaw = articleTextRaw.encode("ascii", "ignore").decode()
+    analyzeText(articleTextRaw)
