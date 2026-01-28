@@ -61,6 +61,14 @@ def getCompanyNews(company):
         })
 
     return allNewsArticles
+
+def extractNewsArticleTextFromHtml(soup):
+	allText = ''
+	result = soup.find_all('div', {'class':'caas-body'})
+	for res in result:
+		allText += res.text
+	return allText
+
 headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
 }
