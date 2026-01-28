@@ -1,7 +1,9 @@
+import json
 import yfinance as yf
 import requests
 from datetime import datetime
 from bs4 import BeautifulSoup
+import analyze
 
 
 def extractBasicInfo(data):
@@ -93,6 +95,12 @@ def getCompanyStockInfo(tickerSymbol):
     futureEarningsDates = getEarningsDates(company)
     newsArticles = getCompanyNews(company)
     newsArticlesAllText = extractCompanyNewsArticles(newsArticles)
-    print(newsArticlesAllText)
+    newsTextAnalysis = analyze.analyzeText(newsArticlesAllText)
+    
+    
+    finalResultJson = json.dumps(newsTextAnalysis, indent=4)
+	# Print for testing
+	print(finalResultJson)
+    
 
 getCompanyStockInfo('MSFT')
