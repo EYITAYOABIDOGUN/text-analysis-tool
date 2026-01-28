@@ -98,9 +98,11 @@ def getCompanyStockInfo(tickerSymbol):
     newsTextAnalysis = analyze.analyzeText(newsArticlesAllText)
     
     
-    finalResultJson = json.dumps(newsTextAnalysis, indent=4)
-	# Print for testing
-	print(finalResultJson)
-    
-
-getCompanyStockInfo('MSFT')
+    finalStockAnalysis = {
+		"basicInfo": basicInfo,
+		"priceHistory": priceHistory,
+		"futureEarningsDates": futureEarningsDates,
+		"newsArticles": newsArticles,
+		"newsTextAnalysis": newsTextAnalysis
+	}
+    return finalStockAnalysis
