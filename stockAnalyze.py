@@ -65,21 +65,16 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
 }
 
-def extractCompanyNewsArticles(newsArticles):
+def extractCompanyNewsArticles(newsArticles): 
+    allArticlesText = ''
     for newsArticle in newsArticles:
-        url = newsArticle.get('link', '')  # safe get
-        if not url:                        # skip empty
-            continue
-        if url.startswith('/'):            # fix relative Yahoo links
-            url = 'https://finance.yahoo.com' + url
-
+        url = newsArticle['link']
         page = requests.get(url, headers=headers)
         soup = BeautifulSoup(page.text, 'html.parser')
-
-        if soup.findAll(string="Continue reading"):
-            print("Tag found - should skip")
-        else:
-            print("Tag not found, don't skip")
+        if not soup.findAll(string='Continue reading'):
+            allArticlesText += extractNewsArticleTextFromHtml(soup)
+    
+    return allArticlesText
 
 def getCompanyStockInfo(tickerSymbol):
     # Get data from Yahoo Finance
@@ -89,16 +84,7 @@ def getCompanyStockInfo(tickerSymbol):
     priceHistory = getPriceHistory(company)
     futureEarningsDates = getEarningsDates(company)
     newsArticles = getCompanyNews(company)
-    extractCompanyNewsArticles(newsArticles)
+    newsArticlesAllText = extractCompanyNewsArticles(newsArticles)
+    print(newsArticlesAllText)
 
-    return {
-        'basicInfo': basicInfo,
-        'priceHistory': priceHistory,
-        'futureEarningsDates': futureEarningsDates,
-        'news': newsArticles
-    }
-
-
-# Example usage
-data = getCompanyStockInfo('MSFT')
-print(data)
+getCompanyStockInfo('MSFT')
