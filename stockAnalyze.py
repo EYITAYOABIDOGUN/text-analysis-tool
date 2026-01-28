@@ -66,37 +66,20 @@ headers = {
 }
 
 def extractCompanyNewsArticles(newsArticles):
-    url = newsArticles[0]['link']
-    page = requests.get(url, headers=headers)
-    print(page.text)
+    for newsArticle in newsArticles:
+        url = newsArticle.get('link', '')  # safe get
+        if not url:                        # skip empty
+            continue
+        if url.startswith('/'):            # fix relative Yahoo links
+            url = 'https://finance.yahoo.com' + url
 
-# def extractCompanyNewsArticles(newsArticles):
-# 	if not newsArticles:
-# 		print("No news articles found")
-# 		return
+        page = requests.get(url, headers=headers)
+        soup = BeautifulSoup(page.text, 'html.parser')
 
-# 	url = newsArticles[0].get('link', '')
-
-# 	if not url or not url.startswith('http'):
-# 		print("News article has no valid URL")
-# 		return
-
-# 	try:
-# 		response = requests.get(url, headers=headers, timeout=10)
-# 		response.raise_for_status()
-
-# 		soup = BeautifulSoup(response.text, 'html.parser')
-
-# 		# Get all paragraph text
-# 		paragraphs = soup.find_all('p')
-# 		article_text = '\n'.join(p.get_text() for p in paragraphs)
-
-# 		print("\n===== ARTICLE TEXT =====\n")
-# 		print(article_text)
-
-# 	except requests.RequestException as e:
-# 		print("Failed to fetch article:", e)
-
+        if soup.findAll(string="Continue reading"):
+            print("Tag found - should skip")
+        else:
+            print("Tag not found, don't skip")
 
 def getCompanyStockInfo(tickerSymbol):
     # Get data from Yahoo Finance
