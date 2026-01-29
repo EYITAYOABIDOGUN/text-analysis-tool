@@ -1,6 +1,6 @@
 # Importing flask module in the project is mandatory
 # An object of Flask class is our WSGI application.
-from flask import Flask, abort
+from flask import Flask, abort, jsonify
 
 # Import stock analysis function
 from stockAnalyze import getCompanyStockInfo
@@ -22,8 +22,13 @@ def healthCheck():
 def analyzeStock(ticker):
     if len(ticker) > 5 or not ticker.isidentifier():
         abort(400, 'Invalid ticker symbol')
-
-    return getCompanyStockInfo(ticker)
+    try:
+        analysis = getCompanyStockInfo(ticker)
+        return jsonify(analysis)
+    except NameError as e:
+        abort(404, str(e))
+    except:
+        abort(500, 'Something went wrong running the stock analysis.')
 
 # main driver function
 if __name__ == '__main__':
