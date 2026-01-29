@@ -1,13 +1,12 @@
-import json
 import yfinance as yf
 import requests
-from datetime import datetime
 from bs4 import BeautifulSoup
-import analyze
+from datetime import datetime, timezone
+from analyze import analyzeText
 
 
 def extractBasicInfo(data):
-    keysToExtract = [
+    keys = [
         'longName',
         'website',
         'sector',
@@ -16,95 +15,63 @@ def extractBasicInfo(data):
         'totalRevenue',
         'trailingEps'
     ]
-    basicInfo = {}
-
-    for key in keysToExtract:
-        basicInfo[key] = data.get(key, '')
-
-    return basicInfo
+    return {k: data.get(k, '') for k in keys}
 
 
 def getPriceHistory(company):
-    historyDf = company.history(period='12mo')
-
-    prices = historyDf['Open'].tolist()
-    dates = historyDf.index.strftime('%Y-%m-%d').tolist()
-
+    history = company.history(period='12mo')
     return {
-        'price': prices,
-        'date': dates
+        'price': history['Open'].tolist(),
+        'date': history.index.strftime('%Y-%m-%d').tolist()
     }
 
 
 def getEarningsDates(company):
-    earningsDatesDf = company.earnings_dates
-
-    allDates = earningsDatesDf.index.strftime('%Y-%m-%d').tolist()
-    dateObjects = [datetime.strptime(date, '%Y-%m-%d') for date in allDates]
-
-    currentDate = datetime.now()
-    futureDates = [
-        date.strftime('%Y-%m-%d')
-        for date in dateObjects
-        if date > currentDate
-    ]
-
-    return futureDates
+    try:
+        earnings = company.earnings_dates
+        now = datetime.now(timezone.utc)
+        return [
+            date.strftime('%Y-%m-%d')
+            for date in earnings.index
+            if date.to_pydatetime().replace(tzinfo=timezone.utc) > now
+        ]
+    except:
+        return []
 
 
 def getCompanyNews(company):
-    newsList = company.news
-    allNewsArticles = []
+    return company.news or []
 
-    for newsDict in newsList:
-        allNewsArticles.append({
-            'title': newsDict.get('title', ''),
-            'link': newsDict.get('link', '')
-        })
 
-    return allNewsArticles
+def extractCompanyNewsArticles(news):
+    text = ""
+    for article in news:
+        try:
+            response = requests.get(article['link'], timeout=5)
+            soup = BeautifulSoup(response.text, 'html.parser')
+            paragraphs = soup.find_all('p')
+            for p in paragraphs:
+                text += p.get_text() + " "
+        except:
+            continue
+    return text
 
-def extractNewsArticleTextFromHtml(soup):
-	allText = ''
-	result = soup.find_all('div', {'class':'caas-body'})
-	for res in result:
-		allText += res.text
-	return allText
-
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
-}
-
-def extractCompanyNewsArticles(newsArticles): 
-    allArticlesText = ''
-    for newsArticle in newsArticles:
-        url = newsArticle['link']
-        page = requests.get(url, headers=headers)
-        soup = BeautifulSoup(page.text, 'html.parser')
-        if not soup.findAll(string='Continue reading'):
-            allArticlesText += extractNewsArticleTextFromHtml(soup)
-    
-    return allArticlesText
 
 def getCompanyStockInfo(tickerSymbol):
-    # Get data from Yahoo Finance
     company = yf.Ticker(tickerSymbol)
 
     basicInfo = extractBasicInfo(company.info)
     priceHistory = getPriceHistory(company)
     futureEarningsDates = getEarningsDates(company)
     newsArticles = getCompanyNews(company)
-    newsArticlesAllText = extractCompanyNewsArticles(newsArticles)
-    newsTextAnalysis = analyze.analyzeText(newsArticlesAllText)
-    
-    
-    finalStockAnalysis = {
-		"basicInfo": basicInfo,
-		"priceHistory": priceHistory,
-		"futureEarningsDates": futureEarningsDates,
-		"newsArticles": newsArticles,
-		"newsTextAnalysis": newsTextAnalysis
-	}
-    return finalStockAnalysis
-companyStockAnalysis = getCompanyStockInfo('MSFT')
-print(json.dumps(companyStockAnalysis, indent=4))
+    newsText = extractCompanyNewsArticles(newsArticles)
+
+    textAnalysis = analyzeText(newsText)
+
+    return {
+        "ticker": tickerSymbol,
+        "basicInfo": basicInfo,
+        "priceHistory": priceHistory,
+        "futureEarningsDates": futureEarningsDates,
+        "analysis": textAnalysis
+    }
