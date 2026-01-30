@@ -1,0 +1,1229 @@
+{
+    "basicInfo": {
+        "fullTimeEmployees": 228000,
+        "longName": "Microsoft Corporation",
+        "marketCap": 3212772638720,
+        "sector": "Technology",
+        "totalRevenue": 305453006848,
+        "trailingEps": 16.0,
+        "website": "https://www.microsoft.com"
+    },
+    "futureEarningsDates": [],
+    "newsArticles": [
+        {
+            "content": {
+                "bypassModal": false,
+                "canonicalUrl": {
+                    "lang": "en-US",
+                    "region": "US",
+                    "site": "finance",
+                    "url": "https://finance.yahoo.com/news/live/earnings-live-sandisk-stock-soars-on-profit-beat-verizon-stock-climbs-exxon-and-chevron-beat-estimates-130559723.html"
+                },
+                "clickThroughUrl": {
+                    "lang": "en-US",
+                    "region": "US",
+                    "site": "finance",
+                    "url": "https://finance.yahoo.com/news/live/earnings-live-sandisk-stock-soars-on-profit-beat-verizon-stock-climbs-exxon-and-chevron-beat-estimates-130559723.html"
+                },
+                "contentType": "STORY",
+                "description": "",
+                "displayTime": "2026-01-30T13:54:16Z",
+                "finance": {
+                    "premiumFinance": {
+                        "isPremiumFreeNews": false,
+                        "isPremiumNews": false
+                    }
+                },
+                "id": "19cd1080-a43d-4393-8ed1-77d2b30d3322",
+                "isHosted": true,
+                "metadata": {
+                    "editorsPick": true
+                },
+                "previewUrl": null,
+                "provider": {
+                    "displayName": "Yahoo Finance",
+                    "url": "http://finance.yahoo.com/"
+                },
+                "pubDate": "2026-01-30T13:05:59Z",
+                "storyline": {
+                    "storylineItems": [
+                        {
+                            "content": {
+                                "canonicalUrl": {
+                                    "url": "https://finance.yahoo.com/video/software-sector-offers-really-interesting-buying-opportunities-123000531.html"
+                                },
+                                "clickThroughUrl": {
+                                    "url": "https://finance.yahoo.com/video/software-sector-offers-really-interesting-buying-opportunities-123000531.html"
+                                },
+                                "contentType": "VIDEO",
+                                "id": "d6340f16-955e-434c-9b20-f97403f62b9e",
+                                "isHosted": true,
+                                "previewUrl": null,
+                                "provider": {
+                                    "displayName": "Yahoo Finance Video",
+                                    "sourceId": "video.yahoofinance.com"
+                                },
+                                "providerContentUrl": "",
+                                "thumbnail": {
+                                    "caption": "",
+                                    "originalHeight": 4016,
+                                    "originalUrl": "https://s.yimg.com/uu/api/res/1.2/tT6a_12VdPrsv1tl2BX3sg--~B/aD00MDE2O3c9NjAxNjthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-01/dae9919a-f13d-4f0b-bbd5-f3fcd60e8554",
+                                    "originalWidth": 6016,
+                                    "resolutions": null
+                                },
+                                "title": "Software sector offers 'really interesting buying opportunities'"
+                            }
+                        },
+                        {
+                            "content": {
+                                "canonicalUrl": {
+                                    "url": "https://finance.yahoo.com/news/live/stock-market-today-sp-500-nasdaq-fall-as-microsoft-leads-tech-lower-with-apple-earnings-on-deck-210050303.html"
+                                },
+                                "clickThroughUrl": {
+                                    "url": "https://finance.yahoo.com/news/live/stock-market-today-sp-500-nasdaq-fall-as-microsoft-leads-tech-lower-with-apple-earnings-on-deck-210050303.html"
+                                },
+                                "contentType": "STORY",
+                                "id": "744c8220-b94f-4074-bf50-484288ae923d",
+                                "isHosted": true,
+                                "previewUrl": null,
+                                "provider": {
+                                    "displayName": "Yahoo Finance",
+                                    "sourceId": "yahoofinance.com"
+                                },
+                                "providerContentUrl": "",
+                                "thumbnail": {
+                                    "caption": "",
+                                    "originalHeight": 3487,
+                                    "originalUrl": "https://s.yimg.com/os/creatr-uploaded-images/2026-01/8df70f60-fc99-11f0-bebf-3653dc1a2c89",
+                                    "originalWidth": 5231,
+                                    "resolutions": null
+                                },
+                                "title": "Stock market today: S&P 500, Nasdaq fall as Microsoft leads tech lower with Apple earnings on deck"
+                            }
+                        }
+                    ]
+                },
+                "summary": "The fourth quarter earnings season kicks into high gear this week, with Big Tech results from Microsoft, Meta, Tesla, and Apple headlining the earnings calendar.",
+                "thumbnail": {
+                    "caption": "",
+                    "originalHeight": 3353,
+                    "originalUrl": "https://s.yimg.com/os/creatr-uploaded-images/2026-01/46e1c900-fddc-11f0-bbff-eec6f62f6ec6",
+                    "originalWidth": 5029,
+                    "resolutions": [
+                        {
+                            "height": 3353,
+                            "tag": "original",
+                            "url": "https://s.yimg.com/uu/api/res/1.2/TWUcnvosvQfMFr4WJwSp4w--~B/aD0zMzUzO3c9NTAyOTthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2026-01/46e1c900-fddc-11f0-bbff-eec6f62f6ec6",
+                            "width": 5029
+                        },
+                        {
+                            "height": 128,
+                            "tag": "170x128",
+                            "url": "https://s.yimg.com/uu/api/res/1.2/EL3GzXZfxqz5rMhMq3Clsw--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/os/creatr-uploaded-images/2026-01/46e1c900-fddc-11f0-bbff-eec6f62f6ec6",
+                            "width": 170
+                        }
+                    ]
+                },
+                "title": "Earnings live: Sandisk stock soars on profit beat, Verizon stock climbs, Exxon and Chevron beat estimates"
+            },
+            "id": "19cd1080-a43d-4393-8ed1-77d2b30d3322"
+        },
+        {
+            "content": {
+                "bypassModal": false,
+                "canonicalUrl": {
+                    "lang": "en-US",
+                    "region": "US",
+                    "site": "finance",
+                    "url": "https://finance.yahoo.com/video/drop-in-microsofts-stock-is-a-buying-opportunity-analyst-says-203502141.html"
+                },
+                "clickThroughUrl": {
+                    "lang": "en-US",
+                    "region": "US",
+                    "site": "finance",
+                    "url": "https://finance.yahoo.com/video/drop-in-microsofts-stock-is-a-buying-opportunity-analyst-says-203502141.html"
+                },
+                "contentType": "VIDEO",
+                "description": "<p>Microsoft (<a target=\"_blank\" rel=\"\" class=\"link\" href=\"https://finance.yahoo.com/quote/MSFT/\" data-i13n=\"slk:MSFT;cpos:1;pos:1\">MSFT</a>) reported fiscal second quarter results on Wednesday. Investors are concerned about the company's slowing cloud growth and increased capital expenditures (CapEx) spending.<br><br>RBC Capital Markets managing director of software Rishi Jaluria sits down with Yahoo Finance host <a target=\"_blank\" rel=\"\" class=\"link\" href=\"https://finance.yahoo.com/author/julie-hyman/\" data-i13n=\"slk:Julie Hyman;cpos:2;pos:1\">Julie Hyman</a> to discuss Microsoft's spending, artificial intelligence (AI) monetization, and more.<br><br>To watch more expert insights and analysis on the latest market action, check out more <a target=\"_blank\" rel=\"\" class=\"link\" href=\"https://finance.yahoo.com/videos/series/market-catalysts\" data-i13n=\"slk:Market Catalysts;cpos:3;pos:1\">Market Catalysts</a>.</p>",
+                "displayTime": "",
+                "finance": {
+                    "premiumFinance": {
+                        "isPremiumFreeNews": false,
+                        "isPremiumNews": false
+                    }
+                },
+                "id": "5c80e27d-773f-41b6-8765-7130404fdb74",
+                "isHosted": true,
+                "metadata": {
+                    "editorsPick": true
+                },
+                "previewUrl": null,
+                "provider": {
+                    "displayName": "Yahoo Finance Video",
+                    "url": "https://finance.yahoo.com/"
+                },
+                "pubDate": "2026-01-29T20:35:02Z",
+                "storyline": {
+                    "storylineItems": [
+                        {
+                            "content": {
+                                "canonicalUrl": {
+                                    "url": "https://finance.yahoo.com/video/small-caps-are-getting-a-leg-up-from-lower-rates-big-beautiful-bill-204438883.html"
+                                },
+                                "clickThroughUrl": {
+                                    "url": "https://finance.yahoo.com/video/small-caps-are-getting-a-leg-up-from-lower-rates-big-beautiful-bill-204438883.html"
+                                },
+                                "contentType": "VIDEO",
+                                "id": "89d743c3-8406-4197-966a-bf4e8eef5f32",
+                                "isHosted": true,
+                                "previewUrl": null,
+                                "provider": {
+                                    "displayName": "Yahoo Finance Video",
+                                    "sourceId": "video.yahoofinance.com"
+                                },
+                                "providerContentUrl": "",
+                                "thumbnail": {
+                                    "caption": "",
+                                    "originalHeight": 2845,
+                                    "originalUrl": "https://s.yimg.com/os/creatr-uploaded-images/2025-07/c5a1bc20-6d8e-11f0-bfb7-e07100b1a2df",
+                                    "originalWidth": 4268,
+                                    "resolutions": null
+                                },
+                                "title": "Small caps are getting a leg up from lower rates, Big Beautiful Bill"
+                            }
+                        },
+                        {
+                            "content": {
+                                "canonicalUrl": {
+                                    "url": "https://finance.yahoo.com/video/microsoft-the-question-the-company-needs-to-answer-183000898.html"
+                                },
+                                "clickThroughUrl": {
+                                    "url": "https://finance.yahoo.com/video/microsoft-the-question-the-company-needs-to-answer-183000898.html"
+                                },
+                                "contentType": "VIDEO",
+                                "id": "853941d7-2a87-4272-ab7f-b1e46d9fc519",
+                                "isHosted": true,
+                                "previewUrl": null,
+                                "provider": {
+                                    "displayName": "Yahoo Finance Video",
+                                    "sourceId": "video.yahoofinance.com"
+                                },
+                                "providerContentUrl": "",
+                                "thumbnail": {
+                                    "caption": "",
+                                    "originalHeight": 3462,
+                                    "originalUrl": "https://s.yimg.com/uu/api/res/1.2/49UQXxamOMfJnvVywLvZjA--~B/aD0zNDYyO3c9NTAwMDthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-01/9eaf4855-8815-4e85-9b00-3308b33928d7",
+                                    "originalWidth": 5000,
+                                    "resolutions": null
+                                },
+                                "title": "Microsoft: The 'question' the company needs to answer"
+                            }
+                        }
+                    ]
+                },
+                "summary": "Microsoft (MSFT) reported fiscal second quarter results on Wednesday. Investors are concerned about the company's slowing cloud growth and increased capital expenditures (CapEx) spending.RBC Capital Markets managing director of software Rishi Jaluria sits down with Yahoo Finance host Julie Hyman to discuss Microsoft's spending, artificial intelligence (AI) monetization, and more.To watch more expert insights and analysis on the latest market action, check out more&nbsp;Market Catalysts.",
+                "thumbnail": {
+                    "caption": "",
+                    "originalHeight": 5464,
+                    "originalUrl": "https://s.yimg.com/uu/api/res/1.2/iUftJ717PYUcUn2ihk1myQ--~B/aD01NDY0O3c9ODE5MjthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-01/4292bdf4-15c2-4bd9-8169-a432c0443192",
+                    "originalWidth": 8192,
+                    "resolutions": [
+                        {
+                            "height": 5464,
+                            "tag": "original",
+                            "url": "https://s.yimg.com/uu/api/res/1.2/iUftJ717PYUcUn2ihk1myQ--~B/aD01NDY0O3c9ODE5MjthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-01/4292bdf4-15c2-4bd9-8169-a432c0443192",
+                            "width": 8192
+                        },
+                        {
+                            "height": 128,
+                            "tag": "170x128",
+                            "url": "https://s.yimg.com/uu/api/res/1.2/abaH3n0ctQRjYSo.DY0log--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://d29szjachogqwa.cloudfront.net/images/2026-01/4292bdf4-15c2-4bd9-8169-a432c0443192",
+                            "width": 170
+                        }
+                    ]
+                },
+                "title": "Drop in Microsoft's stock is a buying opportunity, analyst says"
+            },
+            "id": "5c80e27d-773f-41b6-8765-7130404fdb74"
+        },
+        {
+            "content": {
+                "bypassModal": false,
+                "canonicalUrl": {
+                    "lang": "en-US",
+                    "region": "US",
+                    "site": "finance",
+                    "url": "https://www.investors.com/research/earnings-preview/amazon-stock-alphabet-palantir-headline-busy-earnings-calendar/?src=A00220&yptr=yahoo"
+                },
+                "clickThroughUrl": null,
+                "contentType": "STORY",
+                "description": "",
+                "displayTime": "2026-01-30T15:42:47Z",
+                "finance": {
+                    "premiumFinance": {
+                        "isPremiumFreeNews": false,
+                        "isPremiumNews": false
+                    }
+                },
+                "id": "41583967-2fd5-3a36-97e4-c33c9cf567d6",
+                "isHosted": false,
+                "metadata": {
+                    "editorsPick": false
+                },
+                "previewUrl": "https://finance.yahoo.com/m/41583967-2fd5-3a36-97e4-c33c9cf567d6/amazon-stock-alphabet-.html",
+                "provider": {
+                    "displayName": "Investor's Business Daily",
+                    "url": "http://www.investors.com/"
+                },
+                "pubDate": "2026-01-30T15:42:47Z",
+                "storyline": null,
+                "summary": "Amazon stock highlights another busy week of tech earnings, along with AMD and two strong performers in the fiber-optic group.",
+                "thumbnail": {
+                    "caption": "",
+                    "originalHeight": 563,
+                    "originalUrl": "https://media.zenfs.com/en/ibd.com/b28ceea82fad460eeb4891b9c77a68ee",
+                    "originalWidth": 1000,
+                    "resolutions": [
+                        {
+                            "height": 563,
+                            "tag": "original",
+                            "url": "https://s.yimg.com/uu/api/res/1.2/oVnkOnVRxsdITYSjKKALwQ--~B/aD01NjM7dz0xMDAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/ibd.com/b28ceea82fad460eeb4891b9c77a68ee",
+                            "width": 1000
+                        },
+                        {
+                            "height": 128,
+                            "tag": "170x128",
+                            "url": "https://s.yimg.com/uu/api/res/1.2/HB_jIrqQtvsS50l.n3_YHA--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/ibd.com/b28ceea82fad460eeb4891b9c77a68ee",
+                            "width": 170
+                        }
+                    ]
+                },
+                "title": "Amazon Stock, Alphabet, Palantir Headline Another Busy Earnings Calendar"
+            },
+            "id": "41583967-2fd5-3a36-97e4-c33c9cf567d6"
+        },
+        {
+            "content": {
+                "bypassModal": false,
+                "canonicalUrl": {
+                    "lang": "en-US",
+                    "region": "US",
+                    "site": "finance",
+                    "url": "https://www.fool.com/investing/2026/01/30/jan-28-was-a-historic-day-for-microsoft-for-all/"
+                },
+                "clickThroughUrl": {
+                    "lang": "en-US",
+                    "region": "US",
+                    "site": "finance",
+                    "url": "https://finance.yahoo.com/news/why-jan-28-historic-day-151900871.html"
+                },
+                "contentType": "STORY",
+                "description": "",
+                "displayTime": "2026-01-30T15:19:00Z",
+                "finance": {
+                    "premiumFinance": {
+                        "isPremiumFreeNews": false,
+                        "isPremiumNews": false
+                    }
+                },
+                "id": "0a5493b1-c212-3c6e-8dbe-6484fae0f60e",
+                "isHosted": true,
+                "metadata": {
+                    "editorsPick": false
+                },
+                "previewUrl": null,
+                "provider": {
+                    "displayName": "Motley Fool",
+                    "url": "http://www.fool.com/"
+                },
+                "pubDate": "2026-01-30T15:19:00Z",
+                "storyline": null,
+                "summary": "The company lost hundreds of billions in market cap.",
+                "thumbnail": {
+                    "caption": "",
+                    "originalHeight": 2245,
+                    "originalUrl": "https://media.zenfs.com/en/motleyfool.com/b6ffc1bc2e4e0278308f2d828f28d2c4",
+                    "originalWidth": 3515,
+                    "resolutions": [
+                        {
+                            "height": 2245,
+                            "tag": "original",
+                            "url": "https://s.yimg.com/uu/api/res/1.2/MfTXzGAe45y_dE8yx5c_Kw--~B/aD0yMjQ1O3c9MzUxNTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/motleyfool.com/b6ffc1bc2e4e0278308f2d828f28d2c4",
+                            "width": 3515
+                        },
+                        {
+                            "height": 128,
+                            "tag": "170x128",
+                            "url": "https://s.yimg.com/uu/api/res/1.2/a23sBAHgkRfJu0QovaJh4w--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/motleyfool.com/b6ffc1bc2e4e0278308f2d828f28d2c4",
+                            "width": 170
+                        }
+                    ]
+                },
+                "title": "Why Jan. 28 Was a Historic Day for Microsoft for All the Wrong Reasons"
+            },
+            "id": "0a5493b1-c212-3c6e-8dbe-6484fae0f60e"
+        },
+        {
+            "content": {
+                "bypassModal": false,
+                "canonicalUrl": {
+                    "lang": "en-US",
+                    "region": "US",
+                    "site": "finance",
+                    "url": "https://www.fool.com/coverage/stock-market-today/2026/01/30/stock-market-today-jan-29-microsoft-slides-and-meta-surges/"
+                },
+                "clickThroughUrl": {
+                    "lang": "en-US",
+                    "region": "US",
+                    "site": "finance",
+                    "url": "https://finance.yahoo.com/news/stock-market-today-jan-29-151254174.html"
+                },
+                "contentType": "STORY",
+                "description": "",
+                "displayTime": "2026-01-30T15:12:54Z",
+                "finance": {
+                    "premiumFinance": {
+                        "isPremiumFreeNews": false,
+                        "isPremiumNews": false
+                    }
+                },
+                "id": "aa31fd1c-b4e8-380c-b2c2-e824634047da",
+                "isHosted": true,
+                "metadata": {
+                    "editorsPick": false
+                },
+                "previewUrl": null,
+                "provider": {
+                    "displayName": "Motley Fool",
+                    "url": "http://www.fool.com/"
+                },
+                "pubDate": "2026-01-30T15:12:54Z",
+                "storyline": null,
+                "summary": "On Jan. 29, 2026, a rare post-earnings tumble in Microsoft rattled tech stocks even as the Dow hovered near records.",
+                "thumbnail": {
+                    "caption": "",
+                    "originalHeight": 1250,
+                    "originalUrl": "https://media.zenfs.com/en/motleyfool.com/8293b92b1ffe888be5281be0564a56ab",
+                    "originalWidth": 1400,
+                    "resolutions": [
+                        {
+                            "height": 1250,
+                            "tag": "original",
+                            "url": "https://s.yimg.com/uu/api/res/1.2/XGkRN1RgcvQfYPQrpDHYdA--~B/aD0xMjUwO3c9MTQwMDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/motleyfool.com/8293b92b1ffe888be5281be0564a56ab",
+                            "width": 1400
+                        },
+                        {
+                            "height": 128,
+                            "tag": "170x128",
+                            "url": "https://s.yimg.com/uu/api/res/1.2/5m5pL6yMOXhXKLlDeDJ0jg--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/motleyfool.com/8293b92b1ffe888be5281be0564a56ab",
+                            "width": 170
+                        }
+                    ]
+                },
+                "title": "Stock Market Today, Jan. 29: Microsoft Slides and Meta Surges"
+            },
+            "id": "aa31fd1c-b4e8-380c-b2c2-e824634047da"
+        },
+        {
+            "content": {
+                "bypassModal": false,
+                "canonicalUrl": {
+                    "lang": "en-US",
+                    "region": "US",
+                    "site": "finance",
+                    "url": "https://www.fool.com/investing/2026/01/30/microsoft-just-hit-an-8-month-low-is-the-ai-stock/"
+                },
+                "clickThroughUrl": {
+                    "lang": "en-US",
+                    "region": "US",
+                    "site": "finance",
+                    "url": "https://finance.yahoo.com/news/microsoft-just-hit-8-month-150500173.html"
+                },
+                "contentType": "STORY",
+                "description": "",
+                "displayTime": "2026-01-30T15:05:00Z",
+                "finance": {
+                    "premiumFinance": {
+                        "isPremiumFreeNews": false,
+                        "isPremiumNews": false
+                    }
+                },
+                "id": "5f2bb337-29df-3c93-8574-68708c6667ee",
+                "isHosted": true,
+                "metadata": {
+                    "editorsPick": false
+                },
+                "previewUrl": null,
+                "provider": {
+                    "displayName": "Motley Fool",
+                    "url": "http://www.fool.com/"
+                },
+                "pubDate": "2026-01-30T15:05:00Z",
+                "storyline": null,
+                "summary": "Microsoft tumbled on its earnings report, despite generally solid numbers.",
+                "thumbnail": {
+                    "caption": "Microsoft's new Maia AI chip",
+                    "originalHeight": 787,
+                    "originalUrl": "https://media.zenfs.com/en/motleyfool.com/c4f1c1e125578cc859f9b467d1e8f132",
+                    "originalWidth": 1400,
+                    "resolutions": [
+                        {
+                            "height": 787,
+                            "tag": "original",
+                            "url": "https://s.yimg.com/uu/api/res/1.2/Na0r4zhqCWQ2pwwt7YMKrw--~B/aD03ODc7dz0xNDAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/motleyfool.com/c4f1c1e125578cc859f9b467d1e8f132",
+                            "width": 1400
+                        },
+                        {
+                            "height": 128,
+                            "tag": "170x128",
+                            "url": "https://s.yimg.com/uu/api/res/1.2/BCwFzv6ise2c0QefVkJxJg--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/motleyfool.com/c4f1c1e125578cc859f9b467d1e8f132",
+                            "width": 170
+                        }
+                    ]
+                },
+                "title": "Microsoft Just Hit an 8-Month Low. Is the AI Stock a No-Brainer Buy Right Now?"
+            },
+            "id": "5f2bb337-29df-3c93-8574-68708c6667ee"
+        },
+        {
+            "content": {
+                "bypassModal": false,
+                "canonicalUrl": {
+                    "lang": "en-US",
+                    "region": "US",
+                    "site": "finance",
+                    "url": "https://finance.yahoo.com/news/hexagon-ab-hxgbf-q4-2025-150054769.html"
+                },
+                "clickThroughUrl": {
+                    "lang": "en-US",
+                    "region": "US",
+                    "site": "finance",
+                    "url": "https://finance.yahoo.com/news/hexagon-ab-hxgbf-q4-2025-150054769.html"
+                },
+                "contentType": "STORY",
+                "description": "",
+                "displayTime": "2026-01-30T15:00:54Z",
+                "finance": {
+                    "premiumFinance": {
+                        "isPremiumFreeNews": false,
+                        "isPremiumNews": false
+                    }
+                },
+                "id": "30681a94-a73f-3f5a-9949-3165b6844e83",
+                "isHosted": true,
+                "metadata": {
+                    "editorsPick": false
+                },
+                "previewUrl": null,
+                "provider": {
+                    "displayName": "GuruFocus.com",
+                    "url": "http://www.gurufocus.com/"
+                },
+                "pubDate": "2026-01-30T15:00:54Z",
+                "storyline": null,
+                "summary": "Hexagon AB (HXGBF) reports 3% organic growth and strong cash conversion, while navigating currency headwinds and market challenges.",
+                "thumbnail": null,
+                "title": "Hexagon AB (HXGBF) Q4 2025 Earnings Call Highlights: Strategic Acquisitions and Innovation ..."
+            },
+            "id": "30681a94-a73f-3f5a-9949-3165b6844e83"
+        },
+        {
+            "content": {
+                "bypassModal": false,
+                "canonicalUrl": {
+                    "lang": "en-US",
+                    "region": "US",
+                    "site": "finance",
+                    "url": "https://www.barrons.com/articles/amazon-stock-openai-ipo-microsoft-nvidia-oracle-5b34bcff?siteid=yhoof2&yptr=yahoo"
+                },
+                "clickThroughUrl": null,
+                "contentType": "STORY",
+                "description": "",
+                "displayTime": "2026-01-30T14:53:00Z",
+                "finance": {
+                    "premiumFinance": {
+                        "isPremiumFreeNews": false,
+                        "isPremiumNews": false
+                    }
+                },
+                "id": "b99377c9-af5b-3bc3-8ce9-aa69ce47296b",
+                "isHosted": false,
+                "metadata": {
+                    "editorsPick": false
+                },
+                "previewUrl": "https://finance.yahoo.com/m/b99377c9-af5b-3bc3-8ce9-aa69ce47296b/openai-is-planning-a-huge.html",
+                "provider": {
+                    "displayName": "Barrons.com",
+                    "url": "http://www.barrons.com/"
+                },
+                "pubDate": "2026-01-30T14:53:00Z",
+                "storyline": null,
+                "summary": "Amazon is in talks to invest up to $50 billion in OpenAI, as part of an overall fund-raising round to raise up to $100 billion, The Wall Street Journal reported.",
+                "thumbnail": {
+                    "caption": "",
+                    "originalHeight": 640,
+                    "originalUrl": "https://media.zenfs.com/en/Barrons.com/2e1f0b51b946c77136c6a3cec235f8a9",
+                    "originalWidth": 1280,
+                    "resolutions": [
+                        {
+                            "height": 640,
+                            "tag": "original",
+                            "url": "https://s.yimg.com/uu/api/res/1.2/FsHOKi1zZMRKSdcLMMvNhQ--~B/aD02NDA7dz0xMjgwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/Barrons.com/2e1f0b51b946c77136c6a3cec235f8a9",
+                            "width": 1280
+                        },
+                        {
+                            "height": 128,
+                            "tag": "170x128",
+                            "url": "https://s.yimg.com/uu/api/res/1.2/kX6otBccpmGCXhm30NIOOw--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/Barrons.com/2e1f0b51b946c77136c6a3cec235f8a9",
+                            "width": 170
+                        }
+                    ]
+                },
+                "title": "OpenAI Is Planning a Huge IPO. Why Amazon Could Become a Major Investor."
+            },
+            "id": "b99377c9-af5b-3bc3-8ce9-aa69ce47296b"
+        },
+        {
+            "content": {
+                "bypassModal": false,
+                "canonicalUrl": {
+                    "lang": "en-US",
+                    "region": "US",
+                    "site": "finance",
+                    "url": "https://247wallst.com/investing/2026/01/30/why-investors-rewarded-meta-and-tesla-but-punished-microsoft-despite-revenue-beat/"
+                },
+                "clickThroughUrl": {
+                    "lang": "en-US",
+                    "region": "US",
+                    "site": "finance",
+                    "url": "https://finance.yahoo.com/news/why-investors-rewarded-meta-tesla-144639902.html"
+                },
+                "contentType": "STORY",
+                "description": "",
+                "displayTime": "2026-01-30T14:46:39Z",
+                "finance": {
+                    "premiumFinance": {
+                        "isPremiumFreeNews": false,
+                        "isPremiumNews": false
+                    }
+                },
+                "id": "c6d823be-538d-3564-81ce-be76e37f74bc",
+                "isHosted": true,
+                "metadata": {
+                    "editorsPick": false
+                },
+                "previewUrl": null,
+                "provider": {
+                    "displayName": "24/7 Wall St.",
+                    "url": "https://247wallst.com/"
+                },
+                "pubDate": "2026-01-30T14:46:39Z",
+                "storyline": null,
+                "summary": "Three mega-cap tech companies reported earnings on Wednesday, and the market’s verdict was swift and brutal for one company while two Magnificent 7 members received stamps of approval. Microsoft (NASDAQ:MSFT) beat estimates with $4.14 in adjusted earnings. Meta (NASDAQ:META) crushed expectations with $8.88 EPS versus $8.18 estimated, rallying 9% in a week. Tesla (NASDAQ:TSLA) reported ... Why Investors Rewarded Meta and Tesla But Punished Microsoft Despite Revenue Beat",
+                "thumbnail": {
+                    "caption": "",
+                    "originalHeight": 768,
+                    "originalUrl": "https://media.zenfs.com/en/24_7_wall_st__718/7b511de59b3267d6161718ad6c3a2e51",
+                    "originalWidth": 1376,
+                    "resolutions": [
+                        {
+                            "height": 768,
+                            "tag": "original",
+                            "url": "https://s.yimg.com/uu/api/res/1.2/w5N3qfD.Qf.noHUhgtPfUQ--~B/aD03Njg7dz0xMzc2O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/24_7_wall_st__718/7b511de59b3267d6161718ad6c3a2e51",
+                            "width": 1376
+                        },
+                        {
+                            "height": 128,
+                            "tag": "170x128",
+                            "url": "https://s.yimg.com/uu/api/res/1.2/bYlXtp7SqeJBpgt7y1PTKQ--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/24_7_wall_st__718/7b511de59b3267d6161718ad6c3a2e51",
+                            "width": 170
+                        }
+                    ]
+                },
+                "title": "Why Investors Rewarded Meta and Tesla But Punished Microsoft Despite Revenue Beat"
+            },
+            "id": "c6d823be-538d-3564-81ce-be76e37f74bc"
+        },
+        {
+            "content": {
+                "bypassModal": false,
+                "canonicalUrl": {
+                    "lang": "en-US",
+                    "region": "US",
+                    "site": "finance",
+                    "url": "https://247wallst.com/investing/2026/01/30/cramer-reminds-panicked-investors-stocks-dont-go-down-because-people-are-in-a-bad-mood/"
+                },
+                "clickThroughUrl": {
+                    "lang": "en-US",
+                    "region": "US",
+                    "site": "finance",
+                    "url": "https://finance.yahoo.com/news/cramer-reminds-panicked-investors-stocks-143647272.html"
+                },
+                "contentType": "STORY",
+                "description": "",
+                "displayTime": "2026-01-30T14:36:47Z",
+                "finance": {
+                    "premiumFinance": {
+                        "isPremiumFreeNews": false,
+                        "isPremiumNews": false
+                    }
+                },
+                "id": "33ff8209-a4b7-3dbe-a437-8b63c4358371",
+                "isHosted": true,
+                "metadata": {
+                    "editorsPick": false
+                },
+                "previewUrl": null,
+                "provider": {
+                    "displayName": "24/7 Wall St.",
+                    "url": "https://247wallst.com/"
+                },
+                "pubDate": "2026-01-30T14:36:47Z",
+                "storyline": null,
+                "summary": "It’s a fact of life in the financial markets: sometimes stocks go up, and sometimes they go down. When stocks go down sharply, people want to know why it happens — and Jim Cramer, host of the Mad Money television program, may be able to shed some light on this. Surely, people had burning questions ... Cramer Reminds Panicked Investors: “Stocks Don’t Go Down Because People Are in a Bad Mood”",
+                "thumbnail": {
+                    "caption": "",
+                    "originalHeight": 1000,
+                    "originalUrl": "https://media.zenfs.com/en/24_7_wall_st__718/e3759f2220a6819b0dc8358070cff4d8",
+                    "originalWidth": 1500,
+                    "resolutions": [
+                        {
+                            "height": 1000,
+                            "tag": "original",
+                            "url": "https://s.yimg.com/uu/api/res/1.2/tNG3iFkB0E8aiL49PMvuvQ--~B/aD0xMDAwO3c9MTUwMDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/24_7_wall_st__718/e3759f2220a6819b0dc8358070cff4d8",
+                            "width": 1500
+                        },
+                        {
+                            "height": 128,
+                            "tag": "170x128",
+                            "url": "https://s.yimg.com/uu/api/res/1.2/46SWrzzGHi09rHD2PbypxA--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/24_7_wall_st__718/e3759f2220a6819b0dc8358070cff4d8",
+                            "width": 170
+                        }
+                    ]
+                },
+                "title": "Cramer Reminds Panicked Investors: “Stocks Don’t Go Down Because People Are in a Bad Mood”"
+            },
+            "id": "33ff8209-a4b7-3dbe-a437-8b63c4358371"
+        }
+    ],
+    "newsTextAnalysis": {
+        "data": {
+            "keySentences": [],
+            "sentiment": {},
+            "wordCloudFilePath": null,
+            "wordsPerSentence": 0
+        },
+        "metadata": {
+            "sentencesAnalyzed": 0,
+            "wordsAnalyzed": 0
+        }
+    },
+    "priceHistory": {
+        "date": [
+            "2025-01-30",
+            "2025-01-31",
+            "2025-02-03",
+            "2025-02-04",
+            "2025-02-05",
+            "2025-02-06",
+            "2025-02-07",
+            "2025-02-10",
+            "2025-02-11",
+            "2025-02-12",
+            "2025-02-13",
+            "2025-02-14",
+            "2025-02-18",
+            "2025-02-19",
+            "2025-02-20",
+            "2025-02-21",
+            "2025-02-24",
+            "2025-02-25",
+            "2025-02-26",
+            "2025-02-27",
+            "2025-02-28",
+            "2025-03-03",
+            "2025-03-04",
+            "2025-03-05",
+            "2025-03-06",
+            "2025-03-07",
+            "2025-03-10",
+            "2025-03-11",
+            "2025-03-12",
+            "2025-03-13",
+            "2025-03-14",
+            "2025-03-17",
+            "2025-03-18",
+            "2025-03-19",
+            "2025-03-20",
+            "2025-03-21",
+            "2025-03-24",
+            "2025-03-25",
+            "2025-03-26",
+            "2025-03-27",
+            "2025-03-28",
+            "2025-03-31",
+            "2025-04-01",
+            "2025-04-02",
+            "2025-04-03",
+            "2025-04-04",
+            "2025-04-07",
+            "2025-04-08",
+            "2025-04-09",
+            "2025-04-10",
+            "2025-04-11",
+            "2025-04-14",
+            "2025-04-15",
+            "2025-04-16",
+            "2025-04-17",
+            "2025-04-21",
+            "2025-04-22",
+            "2025-04-23",
+            "2025-04-24",
+            "2025-04-25",
+            "2025-04-28",
+            "2025-04-29",
+            "2025-04-30",
+            "2025-05-01",
+            "2025-05-02",
+            "2025-05-05",
+            "2025-05-06",
+            "2025-05-07",
+            "2025-05-08",
+            "2025-05-09",
+            "2025-05-12",
+            "2025-05-13",
+            "2025-05-14",
+            "2025-05-15",
+            "2025-05-16",
+            "2025-05-19",
+            "2025-05-20",
+            "2025-05-21",
+            "2025-05-22",
+            "2025-05-23",
+            "2025-05-27",
+            "2025-05-28",
+            "2025-05-29",
+            "2025-05-30",
+            "2025-06-02",
+            "2025-06-03",
+            "2025-06-04",
+            "2025-06-05",
+            "2025-06-06",
+            "2025-06-09",
+            "2025-06-10",
+            "2025-06-11",
+            "2025-06-12",
+            "2025-06-13",
+            "2025-06-16",
+            "2025-06-17",
+            "2025-06-18",
+            "2025-06-20",
+            "2025-06-23",
+            "2025-06-24",
+            "2025-06-25",
+            "2025-06-26",
+            "2025-06-27",
+            "2025-06-30",
+            "2025-07-01",
+            "2025-07-02",
+            "2025-07-03",
+            "2025-07-07",
+            "2025-07-08",
+            "2025-07-09",
+            "2025-07-10",
+            "2025-07-11",
+            "2025-07-14",
+            "2025-07-15",
+            "2025-07-16",
+            "2025-07-17",
+            "2025-07-18",
+            "2025-07-21",
+            "2025-07-22",
+            "2025-07-23",
+            "2025-07-24",
+            "2025-07-25",
+            "2025-07-28",
+            "2025-07-29",
+            "2025-07-30",
+            "2025-07-31",
+            "2025-08-01",
+            "2025-08-04",
+            "2025-08-05",
+            "2025-08-06",
+            "2025-08-07",
+            "2025-08-08",
+            "2025-08-11",
+            "2025-08-12",
+            "2025-08-13",
+            "2025-08-14",
+            "2025-08-15",
+            "2025-08-18",
+            "2025-08-19",
+            "2025-08-20",
+            "2025-08-21",
+            "2025-08-22",
+            "2025-08-25",
+            "2025-08-26",
+            "2025-08-27",
+            "2025-08-28",
+            "2025-08-29",
+            "2025-09-02",
+            "2025-09-03",
+            "2025-09-04",
+            "2025-09-05",
+            "2025-09-08",
+            "2025-09-09",
+            "2025-09-10",
+            "2025-09-11",
+            "2025-09-12",
+            "2025-09-15",
+            "2025-09-16",
+            "2025-09-17",
+            "2025-09-18",
+            "2025-09-19",
+            "2025-09-22",
+            "2025-09-23",
+            "2025-09-24",
+            "2025-09-25",
+            "2025-09-26",
+            "2025-09-29",
+            "2025-09-30",
+            "2025-10-01",
+            "2025-10-02",
+            "2025-10-03",
+            "2025-10-06",
+            "2025-10-07",
+            "2025-10-08",
+            "2025-10-09",
+            "2025-10-10",
+            "2025-10-13",
+            "2025-10-14",
+            "2025-10-15",
+            "2025-10-16",
+            "2025-10-17",
+            "2025-10-20",
+            "2025-10-21",
+            "2025-10-22",
+            "2025-10-23",
+            "2025-10-24",
+            "2025-10-27",
+            "2025-10-28",
+            "2025-10-29",
+            "2025-10-30",
+            "2025-10-31",
+            "2025-11-03",
+            "2025-11-04",
+            "2025-11-05",
+            "2025-11-06",
+            "2025-11-07",
+            "2025-11-10",
+            "2025-11-11",
+            "2025-11-12",
+            "2025-11-13",
+            "2025-11-14",
+            "2025-11-17",
+            "2025-11-18",
+            "2025-11-19",
+            "2025-11-20",
+            "2025-11-21",
+            "2025-11-24",
+            "2025-11-25",
+            "2025-11-26",
+            "2025-11-28",
+            "2025-12-01",
+            "2025-12-02",
+            "2025-12-03",
+            "2025-12-04",
+            "2025-12-05",
+            "2025-12-08",
+            "2025-12-09",
+            "2025-12-10",
+            "2025-12-11",
+            "2025-12-12",
+            "2025-12-15",
+            "2025-12-16",
+            "2025-12-17",
+            "2025-12-18",
+            "2025-12-19",
+            "2025-12-22",
+            "2025-12-23",
+            "2025-12-24",
+            "2025-12-26",
+            "2025-12-29",
+            "2025-12-30",
+            "2025-12-31",
+            "2026-01-02",
+            "2026-01-05",
+            "2026-01-06",
+            "2026-01-07",
+            "2026-01-08",
+            "2026-01-09",
+            "2026-01-12",
+            "2026-01-13",
+            "2026-01-14",
+            "2026-01-15",
+            "2026-01-16",
+            "2026-01-20",
+            "2026-01-21",
+            "2026-01-22",
+            "2026-01-23",
+            "2026-01-26",
+            "2026-01-27",
+            "2026-01-28",
+            "2026-01-29"
+        ],
+        "price": [
+            415.7033987332922,
+            415.911907348454,
+            408.5859323997036,
+            409.6679752687522,
+            409.33046130378085,
+            410.9684054782215,
+            413.4302096384315,
+            410.6804954197058,
+            406.64031711794166,
+            404.2280919312538,
+            404.01963601763975,
+            404.80385028408716,
+            405.012314606688,
+            404.8931666240703,
+            413.0755545581438,
+            415.11458446579724,
+            406.3316944915949,
+            398.9612079589026,
+            395.8877115559134,
+            399.1302439589128,
+            390.5662102627109,
+            396.693360360252,
+            381.3555708063787,
+            387.2639110911412,
+            392.1775528184261,
+            390.2280572001935,
+            383.7825787420743,
+            376.9790454259089,
+            380.9080172396425,
+            381.11688044146297,
+            377.7548866940246,
+            384.6380144395121,
+            385.0060336134189,
+            383.47421674907764,
+            383.68311164841384,
+            381.1765391094654,
+            393.2916146921325,
+            391.8194783223531,
+            392.89374127883343,
+            388.04970169840396,
+            386.01060482786494,
+            370.5535270615956,
+            372.6522059403994,
+            375.95451763350314,
+            372.79148704012755,
+            362.1883054506824,
+            349.00899091860083,
+            366.2963320079612,
+            351.65482301024804,
+            380.02273387837465,
+            378.61031016462425,
+            391.1232211496066,
+            386.4383315419063,
+            378.6401344902522,
+            371.757014425277,
+            360.88536094814043,
+            361.44235434917846,
+            374.05472426245655,
+            373.696621578229,
+            384.93638434344297,
+            389.86991018310994,
+            389.2134328165618,
+            388.21877036685504,
+            428.81116623183453,
+            429.43779144193553,
+            430.5617862640975,
+            429.89535368794753,
+            431.5266230555768,
+            435.5948162408885,
+            437.6537503899646,
+            443.5621064267163,
+            445.392292323668,
+            445.75038756339603,
+            449.1894881249397,
+            450.4649678139624,
+            449.29907263869796,
+            453.9925667897047,
+            452.97617231921885,
+            453.3548479183862,
+            448.402251486361,
+            454.87947686866386,
+            459.60282918231184,
+            459.93167902845283,
+            458.1080789456966,
+            455.53716828611505,
+            459.85193916930956,
+            462.3730793208357,
+            463.3296970825432,
+            468.4417517005521,
+            468.05311353771793,
+            469.53790223355384,
+            468.37197033665615,
+            473.3544415367432,
+            474.7395752703882,
+            473.5437784887318,
+            473.7331030955977,
+            476.3239856832242,
+            480.53918652379775,
+            476.53326469371973,
+            487.23560408546166,
+            490.3148017263918,
+            491.2514824256969,
+            495.80545117387857,
+            495.2972567719388,
+            494.729222512998,
+            488.2719538404123,
+            492.07857999859937,
+            495.6360493014733,
+            495.4965138505155,
+            498.54580110123976,
+            501.2861517097084,
+            496.72220586888017,
+            499.7615155353931,
+            501.2562471634966,
+            503.40870828332856,
+            503.9069415603956,
+            512.6760564474737,
+            504.93334625634344,
+            509.1784090675831,
+            504.97317174446385,
+            506.98612743645725,
+            510.67314061143924,
+            512.2775105607909,
+            513.7224399565682,
+            513.3636552782116,
+            553.2831833968122,
+            533.1241083924594,
+            526.4177481275262,
+            535.2964641743647,
+            529.0385508551038,
+            524.9528573399085,
+            520.7676288144971,
+            520.4686618064882,
+            521.9135974657331,
+            530.244240271181,
+            520.7277467800332,
+            520.9370505811125,
+            519.7611730136332,
+            513.1942782099028,
+            508.0822507382742,
+            502.74904380636957,
+            503.3079962424447,
+            505.6835608535286,
+            503.4177851675948,
+            501.06219963605827,
+            506.1426727693108,
+            507.7097597194238,
+            499.53505401941584,
+            502.8488615493355,
+            503.3578996917829,
+            508.11900990545524,
+            497.1794589519428,
+            500.4932596555404,
+            502.04038173392,
+            501.31173995388707,
+            505.70352006176233,
+            507.8395136770829,
+            515.9144004162443,
+            509.6660849144807,
+            510.5344514878828,
+            509.6061757592278,
+            514.6268375894382,
+            512.8401566617626,
+            509.4265417419943,
+            507.3504106819217,
+            509.1071380786861,
+            510.5444265624633,
+            512.2811987663596,
+            513.8382741479315,
+            516.6730253227585,
+            516.1339509263171,
+            517.6411650074094,
+            527.3030443984364,
+            522.3024933531,
+            521.3642478231245,
+            518.6692706129455,
+            515.4452371680482,
+            509.2768388871209,
+            513.9979961583023,
+            511.62245544117155,
+            508.0890780500653,
+            513.6486038577511,
+            516.533257830336,
+            520.1764726871388,
+            521.4839993377199,
+            521.8133604589415,
+            530.7866236569336,
+            548.9725518014023,
+            543.9220119141725,
+            529.4889853080866,
+            527.8919782690999,
+            518.8389228578652,
+            510.80399534425794,
+            512.3410686781482,
+            504.7153625290288,
+            496.02163823572937,
+            499.10586069795033,
+            503.85694933091565,
+            508.4084461357136,
+            509.3566671737073,
+            497.2992409027003,
+            507.5001596757347,
+            494.44458869198826,
+            489.18443539234676,
+            492.7099914550781,
+            478.5,
+            475.0,
+            474.07000732421875,
+            486.30999755859375,
+            487.6000061035156,
+            488.44000244140625,
+            486.7200012207031,
+            476.32000732421875,
+            479.760009765625,
+            482.5199890136719,
+            484.8900146484375,
+            489.1000061035156,
+            484.0299987792969,
+            476.6300048828125,
+            479.82000732421875,
+            480.1000061035156,
+            471.9100036621094,
+            476.9100036621094,
+            478.19000244140625,
+            487.3599853515625,
+            486.1199951171875,
+            484.9800109863281,
+            485.67999267578125,
+            486.7099914550781,
+            484.8599853515625,
+            485.92999267578125,
+            487.8399963378906,
+            484.3900146484375,
+            474.05999755859375,
+            473.79998779296875,
+            479.760009765625,
+            481.239990234375,
+            474.05999755859375,
+            476.6700134277344,
+            474.67999267578125,
+            466.4599914550781,
+            464.1199951171875,
+            457.8299865722656,
+            451.2200012207031,
+            452.6000061035156,
+            447.6199951171875,
+            451.8699951171875,
+            465.30999755859375,
+            473.70001220703125,
+            483.2099914550781,
+            439.989990234375
+        ]
+    }
+}
